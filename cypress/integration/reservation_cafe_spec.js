@@ -35,24 +35,24 @@ describe('Reservation Cafe', () => {
 
       cy.get('input[name="number"]').type('12')
       cy.get('input[value="12"]').should('exist')
-
-
-
-
-
-
-    })
-
-
+    });
 
   });
 
-
-
-
   describe('User Flow', () => {
 
+    it('should allow users to submit a reservation', () => {
+      cy.get('input[name="name"]').type('Memow')
+      cy.get('input[name="date"]').type('04/08')
+      cy.get('input[name="time"]').type('5')
+      cy.get('input[name="number"]').type('3')
+      cy.get('button[class="reservation-button"]').click()
 
+      cy.get('div').should('contain', 'Memow')
+      cy.get('div').should('contain', '04/08')
+      cy.get('div').should('contain', '5 pm')
+      cy.get('div').should('contain', 'Number of guests: 3')
+    })
 
 
 
