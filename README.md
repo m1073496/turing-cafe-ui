@@ -1,4 +1,19 @@
-## Turing Cafe - Reservation Portal
+# Turing Cafe - Reservation Portal
+
+
+## Mid Mod Assessment
+
+<img width="1404" alt="Screen Shot 2021-04-07 at 12 05 40 PM" src="https://user-images.githubusercontent.com/73088654/113913485-9fb28780-9799-11eb-8f14-abaa504ce80e.png">
+
+<img width="1384" alt="Screen Shot 2021-04-07 at 12 07 50 PM" src="https://user-images.githubusercontent.com/73088654/113913728-e3a58c80-9799-11eb-8320-244595cc35eb.png">
+
+
+<img width="601" alt="Screen Shot 2021-04-07 at 12 09 07 PM" src="https://user-images.githubusercontent.com/73088654/113913855-12236780-979a-11eb-9739-abb9c7714dee.png">
+
+
+
+
+
 
 This application was built with `create-react-app`.
 
