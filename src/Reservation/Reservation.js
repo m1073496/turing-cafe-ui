@@ -1,4 +1,5 @@
 import React from 'react';
+import './Reservation.css';
 
 const Reservation = ({ id, name, date, time, number }) => {
   return (
@@ -7,6 +8,7 @@ const Reservation = ({ id, name, date, time, number }) => {
       <p>{date}</p>
       <p>{time}</p>
       <p>{number}</p>
+      <button className='cancel'>Cancel</button>
     </div>
   )
 
