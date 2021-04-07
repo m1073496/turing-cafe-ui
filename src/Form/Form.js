@@ -7,7 +7,7 @@ class Form extends Component {
       name: '',
       date: '',
       time: '',
-      number: null
+      number: ''
     }
   }
 
@@ -53,7 +53,7 @@ class Form extends Component {
         />
 
         <input
-          type='number'
+          type='text'
           placeholder='Number of guests'
           name='number'
           value={this.state.number}
