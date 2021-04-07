@@ -30,13 +30,15 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
+
         <div className='resy-form'>
           <Form makeReservation={this.makeReservation}/>
         </div>
+
         <div className='resy-container'>
          <Container reservations={this.state.reservations} />
-
         </div>
+        
       </div>
     )
   }
