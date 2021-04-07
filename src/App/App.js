@@ -17,7 +17,6 @@ class App extends Component {
    .then(response => response.json())
    .then(reservationData => {
      this.setState({ reservations: reservationData })
-     console.log(this.state.reservations)
    })
  }
 
@@ -38,7 +37,7 @@ class App extends Component {
         <div className='resy-container'>
          <Container reservations={this.state.reservations} />
         </div>
-        
+
       </div>
     )
   }
