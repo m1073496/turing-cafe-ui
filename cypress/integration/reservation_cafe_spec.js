@@ -19,7 +19,7 @@ describe('Reservation Cafe', () => {
         cy.get(`div[id=${i}]`).should('exist');
       }
     });
-    
+
   });
 
   describe('Controlled Form', () => {
@@ -53,8 +53,8 @@ describe('Reservation Cafe', () => {
       cy.get('div').should('contain', '04/08')
       cy.get('div').should('contain', '5 pm')
       cy.get('div').should('contain', 'Number of guests: 3')
-    }):
+    });
 
-  }):
+  });
 
 });
