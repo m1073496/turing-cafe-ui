@@ -15,6 +15,16 @@ class Form extends Component {
     this.setState({ [event.target.name]: event.target.value })
   }
 
+  submitReservation = event => {
+    event.preventDefault();
+    const newReservation = {
+      id: Date.now(),
+      ...this.state
+    }
+
+    this.props.makeReservation(newReservation);
+  }
+
   render() {
     return (
       <form>
@@ -50,7 +60,7 @@ class Form extends Component {
           onChange={event => this.handleChange(event)}
         />
 
-        <button>Make Reservation</button>
+        <button onClick={event => this.submitReservation(event)} >Make Reservation</button>
       </form>
     )
   }
